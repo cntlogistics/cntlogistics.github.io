@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -113,15 +113,26 @@
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
   }
-
+  on('click', 'body', function(e) {
+    let navbar = select('#navbar')
+    if (e.target.classList.value !== "bi mobile-nav-toggle bi-x" && navbar.classList.contains('navbar-mobile')) {
+      navbar.classList.remove('navbar-mobile')
+      let navbarToggle = select('.mobile-nav-toggle')
+      navbarToggle.classList.toggle('bi-list')
+      navbarToggle.classList.toggle('bi-x')
+    }
+  })
   /**
    * Mobile nav toggle
    */
   on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
+    var navbar = select('#navbar')
+        navbar.classList.toggle('navbar-mobile')
+    navbar.classList.add("active")
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
   })
+
 
   /**
    * Mobile nav dropdowns activate
@@ -239,7 +250,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
