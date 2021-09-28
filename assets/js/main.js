@@ -281,4 +281,8 @@
       easing: "ease-out-back",
     });
   });
+  if(window.matchMedia('(min-width: 902px)').matches) {
+   let page = select(".fb-page")
+    page.setAttribute("data-width", "500px")
+  }
 })()
