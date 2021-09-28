@@ -285,4 +285,8 @@
    let page = select(".fb-page")
     page.setAttribute("data-width", "500px")
   }
+  if(window.matchMedia('(max-width: 902px)').matches) {
+   let page = select(".fb-page")
+    page.setAttribute("data-width", "500px")
+  }
 })()
