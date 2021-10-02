@@ -12,7 +12,6 @@ body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
     max-height: 100vh;
-    overflow-y: hidden;
 }
 
 a {
@@ -68,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 #topbar {
     background: #fbfbfb;
     font-size: 15px;
-    height: 55px;
+    height: 60px;
     padding: 0;
 }
 
@@ -103,6 +102,9 @@ h1, h2, h3, h4, h5, h6 {
     border-radius:100%
 }
 
+#topbar .contact-info {
+    border-color: transparent;
+}
 #topbar .contact-info .phone {
     background: url("../img/p2.gif") no-repeat;
     background-size: contain;
@@ -725,7 +727,7 @@ section {
 # Our Clients
 --------------------------------------------------------------*/
 .clients .swiper-slide img {
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     transition: 0.3s;
 }
 
