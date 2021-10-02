@@ -11,6 +11,8 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+    max-height: 100vh;
+    overflow-y: hidden;
 }
 
 a {
@@ -699,7 +701,7 @@ section {
 }
 
 .why-us .content-item p {
-    color: #aaaaaa;
+    color: #444444;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -711,7 +713,7 @@ section {
     }
 
     .why-us .content-item p {
-        color: #aaaaaa;
+        color: #444444;
         font-size: 14px;
         margin: 0;
         padding: 0;
@@ -768,7 +770,7 @@ section {
     height: 80px;
     margin-bottom: 20px;
     /*background: #fff;*/
-    border-radius: 50%;
+    border-radius: 20%;
     transition: 0.5s;
     color: #428bca;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
@@ -817,19 +819,19 @@ section {
     font-size: 14px;
 }
 .services .buying-service {
-    background: url("../img/buying-service.png") no-repeat;
+    background: url("../img/muaho.png") no-repeat;
     background-size: contain;
 }
 .services .ship-eu {
-    background: url("../img/shipping-fast-eu.png") no-repeat;
+    background: url("../img/logistics.png") no-repeat;
     background-size: contain;
 }
 .services .clearance-service {
-    background: url("../img/clearance-service.png") no-repeat;
-    background-size: contain;
+    background: url("../img/thongquan.png") no-repeat;
+    background-size: cover;
 }
 .services .ship-canada {
-    background: url("../img/shipping-fast.png") no-repeat;
+    background: url("../img/booking.png") no-repeat;
     background-size: contain;
 }
 /*--------------------------------------------------------------
