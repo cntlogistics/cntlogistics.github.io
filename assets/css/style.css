@@ -1629,6 +1629,7 @@ section {
     /*border: #9bbb59 solid 5px;*/
     margin-bottom: 50px;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .term-title:before {
