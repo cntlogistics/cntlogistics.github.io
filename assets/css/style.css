@@ -1612,8 +1612,45 @@ section {
     font-weight: 300;
 }
 
-#term .inner-page .bg-cnt {
+#term .inner-page .thead-cnt {
     background-color: #9bbb59;
+    border-bottom: #9bbb59 solid 1px;
+}
+
+#term .inner-page .bg-cnt {
+    background-color: #e6eed5;
+}
+
+#term .inner-page .table-cnt {
+    border-color: #e6eed5;
+}
+
+.term-title {
+    /*border: #9bbb59 solid 5px;*/
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.term-title:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60%;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(100% - 80%);
+}
+
+.term-title:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 3px;
+    background: #5cb874;
+    bottom: 0;
+    left: calc(100% - 70%);
 }
 
 @media (max-width: 786px) {
