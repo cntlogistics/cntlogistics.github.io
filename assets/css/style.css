@@ -1546,3 +1546,18 @@ section {
     }
 }
 
+#term .term-note{
+    text-align: center;
+    font-style: italic;
+    color: red;
+}
+#term .header-term .info .address, .email, .phone {
+    font-size: 20px;
+    font-weight: 300;
+}
+@media (min-width: 1200px) {
+    #term .header-term .info .address, .email, .phone {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
