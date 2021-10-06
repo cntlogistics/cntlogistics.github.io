@@ -668,9 +668,10 @@ section {
 }
 
 .why-us .content-item {
+    display: flex;
     padding: 30px;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-left: 1px solid #adadad;
+    border-bottom: 1px solid #adadad;
     margin: -1px;
 }
 
@@ -679,6 +680,7 @@ section {
     font-size: 20px;
     font-weight: 400;
     color: #6ec083;
+    padding-right: 10px;
 }
 
 .why-us .content-item h4 {
