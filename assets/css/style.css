@@ -93,12 +93,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info .google-map {
-    background: url("../img/google-map.svg") no-repeat;
+    background: url("../img/nav/google-map.svg") no-repeat;
 
 }
 
 #topbar .contact-info .zalo {
-    background: url("../img/zalo.svg") no-repeat;
+    background: url("../img/nav/zalo.svg") no-repeat;
     background-size: contain;
     border-radius: 100%
 }
@@ -108,19 +108,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #topbar .contact-info .phone {
-    background: url("../img/p2.gif") no-repeat;
+    background: url("../img/nav/p2.gif") no-repeat;
     background-size: contain;
     width: 50px;
     height: 50px;
 }
 
 #topbar .contact-info .messenger {
-    background: url("../img/messenger.svg") no-repeat;
+    background: url("../img/nav/messenger.svg") no-repeat;
 
 }
 
 #topbar .contact-info .sms {
-    background: url("../img/sms.svg") no-repeat;
+    background: url("../img/nav/sms.svg") no-repeat;
     background-size: contain;
     border-radius: 100%
 }
@@ -380,7 +380,6 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     position: relative;
 }
-
 #hero .carousel, #hero .carousel-inner, #hero .carousel-item, #hero .carousel-item::before {
     background-size: contain;
     background-position: center;
@@ -391,7 +390,6 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     bottom: 0;
 }
-
 #hero .carousel-container {
     display: flex;
     justify-content: center;
@@ -402,63 +400,54 @@ h1, h2, h3, h4, h5, h6 {
     left: 50px;
     right: 50px;
 }
-
 #hero .container {
     text-align: center;
 }
-
 #hero h2 {
     color: #fff;
     margin-bottom: 20px;
     font-size: 48px;
     font-weight: 700;
 }
-
 #hero p {
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
     margin: 0 auto 30px auto;
     color: #fff;
 }
-
 #hero .carousel-inner .carousel-item {
     transition-property: opacity;
     background-position: center top;
+    width: 100%;
 }
-
 #hero .carousel-inner .carousel-item,
 #hero .carousel-inner .active.carousel-item-start,
 #hero .carousel-inner .active.carousel-item-end {
     opacity: 0;
 }
-
 #hero .carousel-inner .active,
 #hero .carousel-inner .carousel-item-next.carousel-item-start,
 #hero .carousel-inner .carousel-item-prev.carousel-item-end {
     opacity: 1;
     transition: 0.5s;
 }
-
 #hero .carousel-control-next-icon, #hero .carousel-control-prev-icon {
     background: none;
     font-size: 30px;
     line-height: 0;
-    background: rgba(255, 255, 255, 0.2);
+    width: auto;
+    height: auto;
     border-radius: 50px;
     transition: 0.3s;
     color: rgba(255, 255, 255, 0.5);
-    width: 54px;
-    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 #hero .carousel-control-next-icon:hover, #hero .carousel-control-prev-icon:hover {
     background: rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.8);
 }
-
 #hero .carousel-indicators li {
     cursor: pointer;
     background: #fff;
@@ -470,12 +459,10 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.6;
     transition: 0.3s;
 }
-
 #hero .carousel-indicators li.active {
     opacity: 1;
     background: #5cb874;
 }
-
 #hero .btn-get-started {
     font-family: "Raleway", sans-serif;
     font-weight: 500;
@@ -491,69 +478,46 @@ h1, h2, h3, h4, h5, h6 {
     animation-delay: 0.8s;
     background: #5cb874;
 }
-
 #hero .btn-get-started:hover {
     background: #6ec083;
 }
-
 @media (max-width: 992px) {
     #hero {
         height: 100vh;
     }
-
     #hero .carousel-container {
         top: 66px;
     }
 }
-
-
 @media (max-width: 768px) {
     #hero {
-        height: 73vh;
+        height: 65vh;
     }
-
     #hero h2 {
         font-size: 28px;
     }
 }
-
-@media (width: 1024px) {
-    #hero .carousel-inner .active {
-        background: url("./../img/slide/slide-1024.jpg") no-repeat !important;
-    }
-}
-
 @media (min-width: 1024px) {
     #hero {
-        height: 55vh;
+        height: 87vh;
     }
-
     #hero .carousel-control-prev, #hero .carousel-control-next {
         width: 5%;
     }
 }
-
-@media (width: 425px) {
+@media (max-width: 425px) {
     #hero {
-        height: 40vh;
+        height: 38vh;
     }
 }
-
-@media (width: 375px) {
+@media (max-width: 376px) {
     #hero {
-        height: 35vh;
+        height: 34vh;
     }
 }
-
-@media (width: 320px) {
+@media (max-width: 320px) {
     #hero {
-        height: 30vh;
-    }
-}
-
-@media (max-height: 500px) {
-    #hero {
-        height: 120vh;
+        height: 29vh;
     }
 }
 
@@ -684,8 +648,19 @@ section {
 /*--------------------------------------------------------------
 # Why Us
 --------------------------------------------------------------*/
+.why-us:before {
+    content: "";
+    background: rgba(224, 245, 225, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .why-us {
-    padding: 0;
+    padding: 30px 0;
+    background: url("./../img/bg/why-us.png") top center no-repeat;
+    position: relative;
 }
 
 .why-us .row {
@@ -833,22 +808,22 @@ section {
 }
 
 .services .buying-service {
-    background: url("../img/muaho.png") no-repeat;
+    background: url("../img/services/muaho.png") no-repeat;
     background-size: contain;
 }
 
 .services .ship-eu {
-    background: url("../img/logistics.png") no-repeat;
+    background: url("../img/services/logistics.png") no-repeat;
     background-size: contain;
 }
 
 .services .clearance-service {
-    background: url("../img/thongquan.png") no-repeat;
+    background: url("../img/services/thongquan.png") no-repeat;
     background-size: cover;
 }
 
-.services .ship-canada {
-    background: url("../img/booking.png") no-repeat;
+.services .booking-service {
+    background: url("../img/services/booking.png") no-repeat;
     background-size: contain;
 }
 
@@ -1355,7 +1330,6 @@ section {
 }
 
 .timeline__event {
-    margin-bottom: 20px;
     position: relative;
     display: flex;
     margin: 20px 0;
@@ -1382,7 +1356,7 @@ section {
     height: 100%;
     background: #f6a4ec;
     position: absolute;
-    top: 0%;
+    top: 0;
     left: 50%;
     right: auto;
     z-index: -1;
@@ -1439,7 +1413,6 @@ section {
     align-items: center;
     justify-content: center;
     color: #9251ac;
-    padding: 20px;
     align-self: center;
     margin: 0 20px;
     background: #f6a4ec;
@@ -1461,7 +1434,7 @@ section {
     height: 100%;
     background: #f6a4ec;
     position: absolute;
-    top: 0%;
+    top: 0;
     z-index: -1;
     left: 50%;
     transform: translateX(-50%);
@@ -1474,7 +1447,7 @@ section {
     height: 2px;
     background: #f6a4ec;
     position: absolute;
-    left: 0%;
+    left: 0;
     z-index: -1;
     top: 50%;
     transform: translateY(-50%);
@@ -1606,7 +1579,9 @@ section {
     font-style: italic;
     color: red;
 }
-
+#term {
+    /*background-color: #daf3a4;*/
+}
 #term .header-term .info .address, .email, .phone {
     font-size: 20px;
     font-weight: 300;
@@ -1614,7 +1589,7 @@ section {
 
 #term .inner-page .thead-cnt {
     background-color: #9bbb59;
-    border-bottom: #9bbb59 solid 1px;
+    border-bottom: #528f03 solid 1px;
 }
 
 #term .inner-page .bg-cnt {
@@ -1622,7 +1597,7 @@ section {
 }
 
 #term .inner-page .table-cnt {
-    border-color: #e6eed5;
+    border-color: #528f03;
 }
 
 .term-title {
