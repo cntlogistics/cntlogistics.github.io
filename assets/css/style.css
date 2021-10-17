@@ -1720,3 +1720,9 @@ section {
         font-weight: 200;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .fb-customerchat{
+        display: none;
+    }
+}
