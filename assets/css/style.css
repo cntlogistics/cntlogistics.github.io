@@ -1352,25 +1352,25 @@ section {
 }
 
 /******************* Process *****************/
-.main-timeline7 {
+.main-process {
     overflow: hidden;
     position: relative
 }
 
-.main-timeline7 .timeline {
+.main-process .process {
     width: 50%;
     float: left;
     z-index: 1;
     position: relative
 }
 
-.main-timeline7 .timeline:after, .main-timeline7 .timeline:before {
+.main-process .process:after, .main-process .process:before {
     content: "";
     display: block;
     clear: both
 }
 
-.main-timeline7 .timeline:before {
+.main-process .process:before {
     content: "";
     width: 40px;
     height: 90%;
@@ -1380,11 +1380,11 @@ section {
     right: -20px
 }
 
-.main-timeline7 .timeline:last-child:before {
+.main-process .process:last-child:before {
     height: 0
 }
 
-.main-timeline7 .timeline-icon {
+.main-process .process-icon {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -1397,7 +1397,7 @@ section {
     z-index: 3
 }
 
-.main-timeline7 .timeline-icon:before {
+.main-process .process-icon:before {
     content: "";
     width: 60px;
     height: 60px;
@@ -1413,7 +1413,7 @@ section {
     right: 0
 }
 
-.main-timeline7 .timeline-icon img {
+.main-process .process-icon img {
     width: 45px;
     margin-top: 17px;
     font-size: 35px;
@@ -1423,7 +1423,7 @@ section {
     position: relative
 }
 
-.main-timeline7 .year {
+.main-process .year {
     display: block;
     padding: 0 60px 0 30px;
     font-size: 30px;
@@ -1434,7 +1434,7 @@ section {
     position: relative
 }
 
-.main-timeline7 .year:before {
+.main-process .year:before {
     content: "";
     display: block;
     width: 30px;
@@ -1449,7 +1449,7 @@ section {
     left: 4px
 }
 
-.main-timeline7 .year:after {
+.main-process .year:after {
     content: "";
     border-left: 10px solid #303a3b;
     border-top: 10px solid transparent;
@@ -1459,14 +1459,14 @@ section {
     left: 50px
 }
 
-.main-timeline7 .timeline-content {
+.main-process .process-content {
     padding: 18px 60px 18px 40px;
     text-align: right;
     position: relative;
     z-index: 1
 }
 
-.main-timeline7 .timeline-content:after, .main-timeline7 .timeline-content:before {
+.main-process .process-content:after, .main-process .process-content:before {
     content: "";
     width: 80px;
     height: 150px;
@@ -1478,144 +1478,144 @@ section {
     z-index: -1
 }
 
-.main-timeline7 .timeline-content:after {
+.main-process .process-content:after {
     left: auto;
     right: -95px
 }
 
-.main-timeline7 .timeline:last-child .timeline-content:after, .main-timeline7 .timeline:last-child .timeline-content:before {
+.main-process .process:last-child .process-content:after, .main-process .process:last-child .process-content:before {
     width: 0;
     height: 0
 }
 
-.main-timeline7 .title {
+.main-process .title {
     font-size: 22px;
     font-weight: 700;
     color: #5cb874;
     margin-top: 0
 }
 
-.main-timeline7 .description {
+.main-process .description {
     font-size: 15px;
     color: #7f8386;
     line-height: 25px
 }
 
-.main-timeline7 .timeline:nth-child(2) {
+.main-process .process:nth-child(2) {
     margin-top: 140px
 }
 
-.main-timeline7 .timeline:nth-child(even) {
+.main-process .process:nth-child(even) {
     margin-bottom: 80px
 }
 
-.main-timeline7 .timeline:nth-child(odd) {
+.main-process .process:nth-child(odd) {
     margin: -140px 0 0
 }
 
-.main-timeline7 .timeline:first-child, .main-timeline7 .timeline:last-child:nth-child(even) {
+.main-process .process:first-child, .main-process .process:last-child:nth-child(even) {
     margin: 0 !important
 }
 
-.main-timeline7 .timeline:nth-child(2n) .timeline-icon, .main-timeline7 .timeline:nth-child(2n):before {
+.main-process .process:nth-child(2n) .process-icon, .main-process .process:nth-child(2n):before {
     right: auto;
     left: -20px;
     background: #e77e21
 }
 
-.main-timeline7 .timeline:nth-child(2n) .timeline-icon {
+.main-process .process:nth-child(2n) .process-icon {
     left: -40px
 }
 
-.main-timeline7 .timeline:nth-child(2n) .year {
+.main-process .process:nth-child(2n) .year {
     padding: 0 30px 0 60px;
     text-align: left
 }
 
-.main-timeline7 .timeline:nth-child(2n) .year:before {
+.main-process .process:nth-child(2n) .year:before {
     left: auto;
     right: 3px
 }
 
-.main-timeline7 .timeline:nth-child(2n) .year:after {
+.main-process .process:nth-child(2n) .year:after {
     border-left: none;
     border-right: 10px solid #303a3b;
     right: 50px
 }
 
-.main-timeline7 .timeline:nth-child(2n) .timeline-content {
+.main-process .process:nth-child(2n) .process-content {
     padding: 18px 40px 18px 60px;
     text-align: left
 }
 
-.main-timeline7 .timeline:nth-child(2n) .timeline-content:before {
+.main-process .process:nth-child(2n) .process-content:before {
     left: -95px
 }
 
-.main-timeline7 .timeline:nth-child(2n) .timeline-content:after {
+.main-process .process:nth-child(2n) .process-content:after {
     left: 15px
 }
 
-.main-timeline7 .timeline:nth-child(2n) .timeline-icon:before {
+.main-process .process:nth-child(2n) .process-icon:before {
     border-color: #e77e21;
     box-shadow: 0 0 0 4px #f1a563
 }
 
-.main-timeline7 .timeline:nth-child(2n) .year:before {
+.main-process .process:nth-child(2n) .year:before {
     background: #e77e21;
     box-shadow: 0 0 0 4px #e77e21
 }
 
-.main-timeline7 .timeline:nth-child(2n) .title {
+.main-process .process:nth-child(2n) .title {
     color: #e77e21
 }
 
 @media only screen and (max-width: 990px) {
-    .main-timeline7 .timeline {
+    .main-process .process {
         width: 100%
     }
 
-    .main-timeline7 .timeline:nth-child(even), .main-timeline7 .timeline:nth-child(odd) {
+    .main-process .process:nth-child(even), .main-process .process:nth-child(odd) {
         margin: 0
     }
 
-    .main-timeline7 .timeline:before, .main-timeline7 .timeline:nth-child(2n):before {
+    .main-process .process:before, .main-process .process:nth-child(2n):before {
         width: 30px;
         height: 100%;
         left: 25px
     }
 
-    .main-timeline7 .timeline-icon, .main-timeline7 .timeline:nth-child(2n) .timeline-icon {
+    .main-process .process-icon, .main-process .process:nth-child(2n) .process-icon {
         left: 0
     }
 
-    .main-timeline7 .timeline:nth-child(2n) .year, .main-timeline7 .year {
+    .main-process .process:nth-child(2n) .year, .main-process .year {
         text-align: left;
         padding: 0 30px 0 100px
     }
 
-    .main-timeline7 .timeline:nth-child(2n) .year:before, .main-timeline7 .year:before {
+    .main-process .process:nth-child(2n) .year:before, .main-process .year:before {
         left: auto;
         right: 4px
     }
 
-    .main-timeline7 .year:after {
+    .main-process .year:after {
         left: auto;
         right: 50px;
         border-right: 10px solid #303a3b;
         border-left: none
     }
 
-    .main-timeline7 .timeline-content .description {
+    .main-process .process-content .description {
         color: #666
     }
 
-    .main-timeline7 .timeline-content, .main-timeline7 .timeline:nth-child(2n) .timeline-content {
+    .main-process .process-content, .main-process .process:nth-child(2n) .process-content {
         text-align: left;
         padding: 18px 40px 18px 100px
     }
 
-    .main-timeline7 .timeline-content:after, .main-timeline7 .timeline-content:before {
+    .main-process .process-content:after, .main-process .process-content:before {
         width: 0;
         height: 0
     }
