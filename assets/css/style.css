@@ -1721,8 +1721,3 @@ section {
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .fb-customerchat{
-        display: none;
-    }
-}
