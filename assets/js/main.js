@@ -115,11 +115,11 @@
   }
   on('click', 'body', function(e) {
     let navbar = select('#navbar')
-    if (e.target.classList.value !== "bi mobile-nav-toggle bi-x" && navbar.classList.contains('navbar-mobile')) {
+    if (e.target.classList.value !== "mobile-nav-toggle ri-close-fill" && navbar.classList.contains('navbar-mobile')) {
       navbar.classList.remove('navbar-mobile')
       let navbarToggle = select('.mobile-nav-toggle')
-      navbarToggle.classList.toggle('bi-list')
-      navbarToggle.classList.toggle('bi-x')
+      navbarToggle.classList.toggle('ri-menu-3-line')
+      navbarToggle.classList.toggle('ri-close-fill')
     }
   })
   /**
@@ -129,8 +129,8 @@
     var navbar = select('#navbar')
         navbar.classList.toggle('navbar-mobile')
     navbar.classList.add("active")
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
+    this.classList.toggle('ri-menu-3-line')
+    this.classList.toggle('ri-close-fill')
   })
 
 
@@ -155,8 +155,8 @@
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
+        navbarToggle.classList.toggle('ri-menu-3-line')
+        navbarToggle.classList.toggle('ri-close-fill')
       }
       scrollto(this.hash)
     }
