@@ -315,7 +315,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-mobile ul {
-    display: contents;
+    display: block;
     position: absolute;
     top: 55px;
     right: 0;
